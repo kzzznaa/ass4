@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Bride calculator</h1> <br>
+                  <label>Name:</label><br>
+                  <input type="text" name="name" id="name"> <br><hr>
+                  <label>Starting Bid:</label> <br>
+                    <input type="number" name="bid" id="bid"> <br><hr>
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="1.5" selected>Undergraduate Degree</option>
+
+                        <option value="1.2">College Degree</option>
+            
+                        <option value="1.05">High School Degree</option>
+            
+                        <option value="0.9">Middle School Degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth">
+                         <option value="2" selected>More than 10,000$ </option>
+                         <option value="1.5">Between 5,000$ and 10,000$</option>
+                         <option value="1.2">Less than 5,000$ </option><br> 
+                         </select>
+                    <hr> 
+                    <label>Caste</label><br>
+                    <select id="Caste">
+                      <option value="+100" selected>Brahmin</option>
+                      <option value="+50">Kshatriya</option>
+                      <option value="+20">Vaishya</option>
+                      <option value="+10">Shudra</option>
+                      </select>
+                    <hr>
+                    <div id ="skills">
+                     Skills
+                        <input type="checkbox"  value="+10" name="skills"> Playing on a musical instrument
+                        <input type="checkbox"  value="+20" name="skills"> Good cook
+                        <input type="checkbox" value="+15"name="skills"> Easygoing character
+                        <input type="checkbox"  value="+10"name="skills"> Sings well
+                       </form>
+                      </div>
+                   <hr>
+                   <div id="Age">
+                     <p>Age</p> 
+                      <input type="radio" 
+                      name="Age" value="1.5">
+                     <label for="Choice1">18-23</label>
+                     <input type="radio" 
+                      name="Age" value="1.2">
+                     <label>24-27</label>
+                     <input type="radio" 
+                      name="Age" value="0.95">
+                     <label>28+</label>
+                   </div>
+                   <hr>
+                   <div id="Reputation">
+                    Bride's reputation
+                    <form >
+                      <input type="checkbox" name="Reputation" value="0.85"> Gossips about his/her parent's attitude
+                      <input type="checkbox"  name="Reputation" value="0.9">Gossips about his/her character
+                      <input type="checkbox"  name="Reputation"  value="-20"> General gossips around his/her person 
+                     </form>
+                   </div>
+                 <hr>
+                 <form name="myForm" onsubmit="return validate()">
+                   Love Letter
+                    <textarea name="love_letter" id="love_letter"  maxlength="500"></textarea><br>
+                    <form>
+                 <hr>
+                  <button class="button" id="button" value="Submit">Calculate</button><br>
+                  <div class="out-1"></div>             
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
